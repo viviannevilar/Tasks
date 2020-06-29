@@ -1,7 +1,7 @@
 print()
-print("-------------------------------")
-print("Program to add two numbers")
-print("-------------------------------")
+print("--------------------------------------------")
+print("        Program to add two numbers")
+print("--------------------------------------------")
 
 x = 1
 while x == 1:
@@ -15,7 +15,6 @@ while x == 1:
             x = 0
         except ValueError:
             print("This is not a number, try again")
-            # break
 
 
 x = 1
@@ -30,8 +29,8 @@ while x == 1:
             x = 0
         except ValueError:
             print("This is not a number, try again")
-            # break
+
 
 print(f"The sum of the two numbers is {n1 + n2}")
-print("-------------------------------")
+print("--------------------------------------------")
 print()
