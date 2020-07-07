@@ -1,6 +1,3 @@
-
-
-
 names = [None,None,None]
 position = ["first","second","third"]
 
