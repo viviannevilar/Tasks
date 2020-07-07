@@ -1,11 +1,11 @@
-import pandas as pd
+import csv
 
 files = {"colours_20","colours_213"}
 
-for x in files:
-    my_data = pd.read_csv(f"students/exercise_data/{x}.csv")
-    data_answer = my_data.iloc[:,[1,2,4]]
-    print(data_answer.to_string(index=False))
-    print()
+col = []
+for x in sorted(files):
+    with open(f"students/exercise_data/{x}.csv") as csv_file:
+        reader = csv.reader(csv_file)
+        for line in reader:
+            print(f"{line[1]:<15} {line[2]:<15} {line[4]}")
 
-#data_answer = my_data[[' RGB',' HEX',' English']]
