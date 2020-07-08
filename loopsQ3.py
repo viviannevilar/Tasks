@@ -1,16 +1,18 @@
-
-
 print()
 
-n = [None]*3
+n = 3
+names = []
+order = ["first", "second","third"]
+order.reverse()
 
-
-for i in range(3):
-    n[i] = input("What's the first name?: ")
+while n > 0:
+    names.append(input("What's the {} name?: ".format(order[n-1])))
+    n -= 1
 
 print()
-for i in range(3):
-    print(n[i])
+print("The names are: ")
 
+for i in range(3):
+    print("  " + names[i])
 
 print()    
